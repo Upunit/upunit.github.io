@@ -1,0 +1,1 @@
+We're solving Hong Kong's twin crises of food waste and hunger with AI-powered circular nutrition. Our smart bins don't just collect waste - they identify and rescue edible food to create affordable meals for communities in need.
