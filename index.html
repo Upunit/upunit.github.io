@@ -276,26 +276,51 @@
         .stat-card {
             text-align: center;
             padding: 2rem 1rem;
+            background: #2C3E50;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .stat-card:nth-child(1) {
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+        }
+
+        .stat-card:nth-child(2) {
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+        }
+
+        .stat-card:nth-child(3) {
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
         }
 
         .stat-icon {
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            color: var(--primary);
+            color: var(--secondary);
         }
 
         .stat-number {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 800;
-            color: var(--dark);
             margin-bottom: 0.5rem;
             line-height: 1;
+            color: var(--secondary);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         .stat-text {
-            font-size: 1.1rem;
-            color: var(--text-light);
+            font-size: 1.2rem;
+            color: var(--white);
             font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
 
         /* Problems Section */
@@ -615,12 +640,16 @@
             font-weight: 800;
             margin-bottom: 0.5rem;
             line-height: 1;
+            color: var(--white);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
 
         .stat-text {
             font-size: 1.2rem;
             opacity: 0.95;
             font-weight: 600;
+            color: var(--white);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
 
         /* CTA Section */
@@ -873,7 +902,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <i class="fas fa-recycle"></i>
+                    <i class="fas fa-leaf"></i>
                     UpUnit
                 </div>
                 <div class="hamburger">☰</div>
@@ -918,11 +947,6 @@
                     <div class="stat-text">Hong Kongers Face Food Insecurity</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-icon">💰</div>
-                    <div class="stat-number">$7.8B</div>
-                    <div class="stat-text">Annual Economic Value Lost</div>
-                </div>
-                <div class="stat-card">
                     <div class="stat-icon">🌍</div>
                     <div class="stat-number">70%</div>
                     <div class="stat-text">Reduction Target for Food Waste</div>
@@ -942,24 +966,24 @@
             <div class="problems-grid">
                 <div class="problem-card">
                     <div class="problem-icon">
-                        <i class="fas fa-balance-scale"></i>
+                        <i class="fas fa-apple-alt"></i>
                     </div>
-                    <h3>The Paradox</h3>
-                    <p>Hong Kong wastes over 3,600 tons of edible food daily while 1 in 4 citizens faces food insecurity - a systemic failure we can no longer ignore.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <h3>The System Failure</h3>
-                    <p>Current food recycling is complicated, inconvenient, and offers no incentive for participation, causing widespread disengagement.</p>
+                    <h3>Nutrients in Food Waste Not Fully Utilized</h3>
+                    <p>Processed vegetable and fruit waste possess substantial nutrient profiles such as amino acids and minerals. When not properly managed, these nutrients will contribute to environmental harm. By efficiently collecting food waste and reprocessing it into new dishes, we can help reclaim these nutrients for productive use.</p>
                 </div>
                 <div class="problem-card">
                     <div class="problem-icon">
                         <i class="fas fa-utensils"></i>
                     </div>
-                    <h3>The Lost Opportunity</h3>
-                    <p>We're throwing away perfect nutrition that could feed thousands of families, representing both a moral and economic failure.</p>
+                    <h3>Food Insecurity and Hunger</h3>
+                    <p>In Hong Kong, around 1.4 million people (21%) live below the poverty line and around 23.6% of population face food insecurity. By repurposing edible food waste into safe, nutritious and affordable meals, we hope to address the nutrition gaps experienced by vulnerable groups.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>High Barriers, Low Participation</h3>
+                    <p>Hong Kong's food waste recycling infrastructure faces significant challenges. Most recycling facilities operate at under one-third of their capacity, and coverage is particularly weak in private estates and dense urban districts. Existing procedures involve mandatory sorting, complicated systems and lower public awareness.</p>
                 </div>
             </div>
         </div>
@@ -1031,24 +1055,24 @@
             <div class="usp-grid">
                 <div class="usp-card">
                     <div class="usp-icon">
-                        <i class="fas fa-sync-alt"></i>
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3>Full Vertical Integration</h3>
-                    <p>We control the entire chain from collection to plate, eliminating intermediaries and maximizing efficiency while capturing full margin.</p>
+                    <h3>User-Friendly Model</h3>
+                    <p>An intuitive interface and easy adoption process encourage restaurant participation, improving data collection and system scalability.</p>
                 </div>
                 <div class="usp-card">
                     <div class="usp-icon">
-                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>AI-Powered Efficiency</h3>
-                    <p>Our automated sorting reduces operational costs by 60% compared to manual methods while improving accuracy and scalability.</p>
+                    <h3>Maximize Profit through Vertical Integration</h3>
+                    <p>Streamlined operations remove intermediaries, lowering production and logistical costs while maximizing profitability.</p>
                 </div>
                 <div class="usp-card">
                     <div class="usp-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-utensils"></i>
                     </div>
-                    <h3>Win-Win-Win Economics</h3>
-                    <p>Restaurants profit from waste, communities access affordable nutrition, and the environment benefits - creating true circular sustainability.</p>
+                    <h3>Direct Engagement with Major Food Waste Sources</h3>
+                    <p>Targeting high-volume restaurants positions the system at the core of the food waste chain for maximum impact.</p>
                 </div>
             </div>
         </div>
@@ -1185,32 +1209,6 @@
                 <p>&copy; 2025 UpUnit. All rights reserved. Creating a hunger-free Hong Kong with zero food waste.</p>
             </div>
         </div>
-
-
-
-        
-<section id="documentation" style="background: #f8f9fa; padding: 60px 0; text-align: center;">
-    <div class="container">
-        <h2>Project Documentation</h2>
-        <p>See how we used AI to build this solution</p>
-        <div style="margin-top: 30px;">
-            <a href="https://github.com/upunit/upunit.github.io/blob/main/chat.md" 
-               target="_blank" 
-               class="btn" 
-               style="background: #6c63ff; margin: 10px;">
-                📋 View AI Collaboration Log
-            </a>
-            <a href="https://github.com/upunit/upunit.github.io" 
-               target="_blank" 
-               class="btn" 
-               style="background: #333; margin: 10px;">
-                💻 View Source Code
-            </a>
-        </div>
-    </div>
-</section>
-
-        
     </footer>
 
     <script>
@@ -1296,6 +1294,4 @@
         });
     </script>
 </body>
-
 </html>
-
